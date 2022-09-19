@@ -1,0 +1,43 @@
+.comment_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-bottom: 1px solid gray;
+  .commentor_container,
+  .replier_container {
+    .commentor_form,
+    .reply_form {
+      display: flex;
+      flex-direction: row;
+      .commentor_input,
+      .reply_input {
+        width: 100%;
+        padding: 0.3rem 0.6rem;
+        font-size: 0.8rem;
+        border-radius: 0.3rem;
+        margin-right: 1rem;
+      }
+      .comment_send_button,
+      .reply_send_button {
+        height: 2rem;
+        border: none;
+        background: none;
+      }
+    }
+    .nameandicons {
+      display: flex;
+      justify-content: space-between;
+    }
+    .commentor_name,
+    .replier_name {
+      font-size: 0.8rem;
+      color: gray;
+    }
+    .comment,
+    .reply {
+      font-size: 1rem;
+    }
+  }
+}

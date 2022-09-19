@@ -1,0 +1,151 @@
+.filter_container {
+  position: fixed;
+  width: 12rem;
+  padding: 1rem;
+  left: 12rem;
+  // overflow-y: scroll;
+
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: white;
+
+  margin-left: 2rem;
+  gap: 10rem;
+  z-index: 5000;
+  border: 1px solid #d1d7dc;
+  form {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    .filter_field_container {
+      width: 10rem;
+      .genders {
+        display: flex;
+        font-size: 0.8rem;
+        margin: 0 auto;
+        .male,
+        .female {
+          margin-left: 1.5rem;
+          border: 0.5px solid black;
+          padding: 1.5px 3px;
+        }
+        .active_button {
+          background: #000000;
+          color: white;
+        }
+      }
+      .name_container {
+        display: flex;
+        justify-content: space-between;
+        .filter_field_name {
+          font-size: 1rem;
+          font-weight: 100;
+          letter-spacing: 0.5px;
+        }
+        margin-bottom: 0.5rem;
+      }
+      .input_fields {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        font-size: 0.9rem;
+        .order {
+          display: flex;
+          gap: 5px;
+          font-size: 0.8rem;
+          letter-spacing: 0.1px;
+          margin: 0 auto;
+          margin-bottom: 0.3rem;
+          a {
+            border: 0.5px solid #000000;
+            padding: 0.1rem 0.2rem;
+          }
+          a:active {
+            background: #121212;
+            color: white;
+          }
+        }
+        .fields {
+          display: flex;
+          flex-direction: row;
+          gap: 0.5rem;
+          input[type='checkbox'] {
+            -webkit-appearance: none;
+            appearance: none;
+
+            background-color: var(--form-background);
+
+            margin: 0;
+            font: inherit;
+            color: currentColor;
+            width: 1.15rem;
+            height: 1.15rem;
+            border: 0.15rem solid currentColor;
+            border-radius: 0.15rem;
+            transform: translateY(-0.075rem);
+
+            display: grid;
+            place-content: center;
+
+            &::before {
+              content: '';
+              width: 0.65em;
+              height: 0.65em;
+              clip-path: polygon(
+                14% 44%,
+                0 65%,
+                50% 100%,
+                100% 16%,
+                80% 0%,
+                43% 62%
+              );
+              transform: scale(0);
+              transform-origin: bottom left;
+              transition: 120ms transform ease-in-out;
+              box-shadow: inset 1em 1em var(--form-control-color);
+              /* Windows High Contrast Mode */
+              background-color: CanvasText;
+            }
+            &:checked::before {
+              transform: scale(1);
+            }
+
+            &:disabled {
+              --form-control-color: var(--form-control-disabled);
+
+              color: var(--form-control-disabled);
+              cursor: not-allowed;
+            }
+          }
+        }
+      }
+    }
+    .clear_filter_button {
+      font-size: 1rem;
+      padding: 0.1rem 0.2rem;
+      background: none;
+      outline: none;
+      border: none;
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .filter_container {
+    left: -1rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .filter_container {
+    left: -1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .filter_container {
+    left: 0rem;
+  }
+}

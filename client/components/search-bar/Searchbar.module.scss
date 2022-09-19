@@ -1,0 +1,25 @@
+.searchbar_wrapper {
+  width: 100vw;
+  display: flex;
+  padding-top: 5rem;
+  height: 10rem;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    position: relative;
+    input {
+      outline: none;
+      width: 20rem;
+      margin: 0.5rem auto;
+      padding: 0.2rem 0.5rem;
+      border: none;
+      border-bottom: 1px solid black;
+
+      search_icon {
+        position: absolute;
+        top: 5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.order_details_section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3rem;
+  text-transform: uppercase;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  box-shadow: 0rem 0rem 0.2rem 0.2rem rgba($color: #000000, $alpha: 0.1);
+
+  .order_image {
+    cursor: pointer;
+    height: 20rem;
+    width: 20rem;
+    margin: 0 auto;
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+  .order_details {
+    cursor: pointer;
+    margin: auto;
+    .name {
+      font-size: 1.5rem;
+      font-weight: lighter;
+      margin-bottom: 1rem;
+    }
+    .price {
+      color: #171717;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .status {
+      color: #9b9b9b;
+      font-size: 1rem;
+      text-transform: capitalize;
+      font-weight: 300;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.auth_wrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  & .auth_section {
+    position: absolute;
+    margin-top: 8rem;
+    top: 40%;
+    height: 30rem;
+
+    width: 20rem;
+    border: 1px solid black;
+
+    box-shadow: 0px 0px 100000px 1000000px rgba($color: #000000, $alpha: 0.7);
+    close_icon {
+      left: 0;
+      top: 0;
+      position: absolute;
+      display: none;
+    }
+    & .buttons {
+      margin-top: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 2rem 0rem 2rem;
+      align-items: center;
+      font-size: 1.5rem;
+
+      & button {
+        padding: 0.75rem 1.5rem;
+        background: none;
+        border: 1px solid black;
+
+        font-size: 1rem;
+        letter-spacing: 3;
+        &.active_button {
+          background: black;
+          color: white;
+          transition: 0.3s ease;
+        }
+      }
+    }
+    .google_button {
+      padding: 1rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

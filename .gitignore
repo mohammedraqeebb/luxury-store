@@ -1,0 +1,9 @@
+chat
+client/node_modules
+client/.next
+common
+orders/node_modules
+payments/node_modules
+products/node_modules
+auth/node_modules
+query/node_modules
