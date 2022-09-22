@@ -6,7 +6,7 @@ export const parentVariants = {
    show: {
       opacity: 1,
       transition: {
-         staggerChildren: 0.2,
+         staggerChildren: 0.05,
       },
    },
    exit: {
@@ -21,7 +21,7 @@ export const childProductVariants = {
    show: {
       opacity: 1,
       transition: {
-         duration: 0.4,
+         duration: 0.3,
       },
    },
    exit: {

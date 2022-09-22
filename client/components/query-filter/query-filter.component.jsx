@@ -147,7 +147,7 @@ const QueryFilter = ({
                 <input
                   type="checkbox"
                   id="shoes"
-                  value="shoes"
+                  value="shoe"
                   name="category"
                   onChange={handleFilterChange}
                 />

@@ -43,5 +43,5 @@ spec:
   ports:
     - name: products
       protocol: TCP
-      port: 5000
-      targetPort: 5000
+      port: 7000
+      targetPort: 7000

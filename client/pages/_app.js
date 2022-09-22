@@ -1,4 +1,4 @@
-
+import axios from 'axios';
 import '../styles/globals.scss'
 import Head from 'next/head';
 import { useState, useEffect } from 'react';
